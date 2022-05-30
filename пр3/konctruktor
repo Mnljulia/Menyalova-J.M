@@ -1,0 +1,7 @@
+package Java3;
+public class NewJava {
+    public static void main(String[] args) {
+        java3 person = new java3(1824,"комедия","Горе от ума",1850, "Отечественные записки",352,"А.С.Грибоедов");
+        System.out.println(person);
+    }
+}
