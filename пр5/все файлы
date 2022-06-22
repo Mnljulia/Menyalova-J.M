@@ -1,0 +1,26 @@
+//Учёт литературы. Создать родительский класс "Литература" (код источника литературы,тип литературы, название, год издательства, название издательства,Количество страниц, автор) и дочернии классы:
+//-"научно-техническая литература"(область науки, количество экземпляров);
+//-"периодика"(вид периодики,период издательства);
+//-"справочники"(направление,том,часть).
+//Реализовать класс для хранения списка литературы с методом добавления нового источника и методом печати списка литературы.
+
+package Java4;
+
+import java.util.ArrayList;
+
+public class AllFile {
+
+    private ArrayList<Literature> fileOfLiterature;
+    public AllFile(ArrayList<Literature> ListOfLiterature){
+        this.fileOfLiterature = ListOfLiterature;
+    }
+
+    public void addLiterature(Literature literature){
+        fileOfLiterature.add(literature);
+    }
+
+    public ArrayList<Literature> ToLiterature(){
+        return fileOfLiterature;
+    }
+
+}
